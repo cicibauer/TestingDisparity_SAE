@@ -9,7 +9,7 @@ Conclusions: Our proposed analytical framework offers policy makers and practiti
 
 ## Data
 - Simulated data on weekly tests and infection counts and population size for 222 GEOIDs: [COVID data](Data/weekly_data.xlsx)         
-- Adjacency matrix for spatial modeling: [Adjacency matrix](Data/adjacency_matrix.adj
+- Adjacency matrix for spatial modeling: [Adjacency matrix](Data/adjacency_matrix.adj)
 
 ## Codes
 - Process and calculate testing gaps: [R script](01_TestingGap.R)
