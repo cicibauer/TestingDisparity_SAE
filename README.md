@@ -8,7 +8,7 @@ Results: We demonstrated the utility of the proposed approach using weekly SARS-
 Conclusions: Our proposed analytical framework offers policy makers and practitioners a tool for understanding SARS-CoV-2 testing disparities in geographically small communities. The analytical approach could also aid local public health departments in COVID-19 response planning, and inform the intervention programs to improve goal setting and strategy implementation related to SARS-CoV-2 testing uptake.       
 
 ## Data
-- Simulated data on weekly tests and infection counts and population size for 222 GEOIDs: [COVID data](Data/weekly_data.xlsx)         
+- Simulated data on weekly tests (52 weeks total), total infection counts and population size for 222 GEOIDs: [COVID data](Data/weekly_data.xlsx)         
 - Adjacency matrix for spatial modeling: [Adjacency matrix](Data/adjacency_matrix.adj)
 
 ## Codes
