@@ -1,5 +1,5 @@
 # A Novel Bayesian Spatial-temporal Approach to Quantify SARS-CoV-2 Testing Disparities for Small Area Estimation
-This GitHub repositipry provides data and codes for this paper.       
+This GitHub repositipry provides data and codes for this study.       
 
 ## Abstract
 Objectives: We proposed a novel Bayesian spatial-temporal approach to identify and quantify SARS-CoV-2 testing disparities in the context of small area estimation.         
