@@ -1,14 +1,11 @@
 ################################################################
-# This R script is to process data and calculate testing gaps
+# This R script uses a simualted dataset to demonstrate a simple
+# rank-based approach to assess testing disparity
 ################################################################
-
 #--------------------load required packages ---------------------#
-library(readxl)
-library(dplyr)
-library(data.table)
-library(ggplot2)
+library(readxl); library(dplyr); library(data.table); library(ggplot2)
 
-#------------------------- Read in data ------------------------#
+#------------------------- Read in simulated data ------------------------#
 # Weekly counts of tests and cases and population size
 data <- read_excel("Data/weekly_data.xlsx") # 52 weeks and 222 GEOIDs
 
