@@ -1,18 +1,16 @@
 ######################################################
-# This R script is for predicting positivity rate
+# This R script implements the predicted immiediate, 
+# short-term or long-tme testing disparity
 ######################################################
+### read in prepared data (using simulated dataset)
 
-
-### data preparation
 load("Data/data_for_pred.rda")
-#dat$GEOID <- as.character(dat$GEOID)
 dat$gap <- ceiling(dat$gap)
 
 # adjacency matrix
 g <- inla.read.graph("Data/adjacency_matrix.adj")
 
-
-#### define function of calculating gap - using previous week testing intensity
+#### define function of calculating gap - using previous week testing intensity for immediate testing disparity
 calculate_gap <- function(dataset){
   dataset <- dataset %>% 
     group_by(week) %>%
@@ -38,7 +36,7 @@ calculate_gap <- function(dataset){
 }
 
 
-#### define function of calculating gap - using overall average testing intensity
+#### define function of calculating gap - using overall average testing intensity for long-term testing disparity
 
 calculate_gap2 <- function(dataset, pred_week){
   dataset <- as.data.frame(dataset)
@@ -74,7 +72,7 @@ calculate_gap2 <- function(dataset, pred_week){
 }
 
 
-#### define function of calculating gap - using prev 4 weeks average testing intensity 
+#### define function of calculating gap - using the prior 4 weeks average testing intensity for short-term disparity 
 calculate_gap3 <- function(dataset, pred_week){
   dataset <- as.data.frame(dataset)
   dat_total_test <- dataset[dataset[,"week"] %in% (pred_week-4):(pred_week-1), ]
